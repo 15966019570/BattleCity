@@ -1,0 +1,15 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+cl : 命令行  warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  Main.cpp
+  LessonX.cpp
+  CTankPlayer.cpp
+  CTankEnemy.cpp
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(78,22): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(95,13): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  CBullet.cpp
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\CBullet.cpp(41,22): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+  正在生成代码...
+CBullet.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/INCREMENTAL:NO”规范)
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+CommonClass_2015.lib(CommonClass.obj) : warning LNK4099: 未找到 PDB“”(使用“CommonClass_2015.lib(CommonClass.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  VCProject2015.vcxproj -> D:\C++ history\FunCode\BattleCity\Bin\Game.exe

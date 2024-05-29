@@ -14,9 +14,11 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="../Header" />
+					<Add directory="include" />
+					<Add directory="Header" />
 				</Compiler>
 				<Linker>
-					<Add library="..\Src\CommonClass.a" />
+					<Add library="../Src/CommonClass.a" />
 					<Add library="libwinmm.a" />
 				</Linker>
 			</Target>
@@ -28,10 +30,12 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="../Header" />
+					<Add directory="include" />
+					<Add directory="Header" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="..\Src\CommonClass.a" />
+					<Add library="../Src/CommonClass.a" />
 					<Add library="libwinmm.a" />
 				</Linker>
 			</Target>
@@ -39,11 +43,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../Header/CBullet.h" />
+		<Unit filename="../Header/CTankEnemy.h" />
+		<Unit filename="../Header/CTankPlayer.h" />
+		<Unit filename="../Header/CWeapon.h" />
 		<Unit filename="../Header/CommonClass.h" />
 		<Unit filename="../Header/LessonX.h" />
 		<Unit filename="../Icon.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+		<Unit filename="../Src/CBullet.cpp" />
+		<Unit filename="../Src/CTankEnemy.cpp" />
+		<Unit filename="../Src/CTankPlayer.cpp" />
+		<Unit filename="../Src/CWeapon.cpp" />
 		<Unit filename="../Src/LessonX.cpp" />
 		<Unit filename="../Src/Main.cpp" />
 		<Extensions>
