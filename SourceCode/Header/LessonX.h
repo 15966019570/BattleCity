@@ -104,6 +104,8 @@ public:
     void	        AddTankEnemy(float fDeltaTime);
 
     void            OnSpriteColSprite(const char *szSrcName, const char *szTarName);
+
+    void            DeleteAllSprite();
 };
 
 /////////////////////////////////////////////////////////////////////////////////

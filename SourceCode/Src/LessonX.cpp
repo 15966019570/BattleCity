@@ -30,6 +30,13 @@ CGameMain::CGameMain()
 	m_pBattleCity           =   new CSprite("battleCityText");
 	m_pSpaceStart           =   new CSprite("spaceStart");
 
+    m_pScore                =   new CTextSprite("score");
+	m_pHight                =   new CTextSprite("hight");
+    m_pEnemy                =   new CTextSprite("enemyNum");
+    m_iScore                =   0;//分数
+    m_iEnemy                =   0;//敌人数量
+    m_iHight                =   0;
+    m_fDeltaTime            =   0.f;
 
 }
 //==============================================================================
@@ -62,7 +69,7 @@ void CGameMain::GameMainLoop( float	fDeltaTime )
 	case 2:
 		{
 			// TODO 修改此处游戏循环条件，完成正确游戏逻辑
-			if( true )
+			if(!m_pTankPlayer->IsDead() && !m_pAim_nor->IsDead() && m_fDeltaTime<30)
 			{
 				GameRun( fDeltaTime );
 			}
@@ -105,6 +112,23 @@ void CGameMain::GameInit()
 	m_pAim_nor->SetSpriteCollisionReceive(true);
 	m_pAim_nor->SetSpritePosition(0.f,20.f);
 
+    m_iBulletNum    =   0;
+	m_iTankEnemyNumber  =  0;
+	m_fTankEnemyTime = 4.f;
+	m_iScore = 0;
+	m_iHight = 0;
+	m_iEnemy = 0;
+    m_fDeltaTime = 0.f;
+
+    FILE * fp =fopen("save.dat","r+");
+    if(fp)
+    {
+        fread(&m_iHight,sizeof(int),1,fp);
+        fclose(fp);
+    }
+    m_pHight = new CTextSprite("hight");
+    m_pHight->SetTextValue(m_iHight);
+
 }
 //=============================================================================
 //
@@ -130,12 +154,27 @@ void CGameMain::GameRun( float fDeltaTime )
 			DeleteWeaponByName(m_vWeapon[i]->GetName());
 		}
 	}
+	m_fDeltaTime += fDeltaTime;
+    m_pScore->SetTextValue(m_iScore);
+	m_pHight->SetTextValue(m_iHight);
+	m_pEnemy->SetTextValue(m_iEnemy);
+
 }
 //=============================================================================
 //
 // 本局游戏结束
 void CGameMain::GameEnd()
 {
+    DeleteAllSprite();
+    FILE * fp =fopen("save.dat","w+");
+    if(m_iScore>m_iHight)
+        fwrite(&m_iScore,sizeof(int),1,fp);
+    fclose(fp);
+
+    m_pBattleCity->SetSpriteVisible(true);
+	m_pSpaceStart->SetSpriteVisible(true);
+	SetGameState(0);
+
 }
 //=============================================================================
 //
@@ -278,6 +317,7 @@ void CGameMain::AddTankEnemy(float fDeltaTime)
         m_iTankEnemyNumber++;
 		m_vWeapon.push_back(m_pTankEnemy);  //把创建的敌方坦克插入到容器中
 		m_fTankEnemyTime=0.f;
+	    m_iEnemy++;//坦克数量增长
 	}
 }
 
@@ -288,6 +328,12 @@ void CGameMain::OnSpriteColSprite(const char *szSrcName, const char *szTarName)
 	{
 		CBullet *tmpBullet = (CBullet*)FindWeaponByName(szSrcName);
 		tmpBullet->OnSpriteColSprite(tarSprite);
+		if( tmpBullet->GetOwner()==1 && strstr(szTarName,"enemy") != NULL)
+		{
+			m_iScore++;
+			m_iEnemy--;
+		}
+
 	}
 	else if(strcmp(szSrcName,"myplayer")==0) //发送碰撞为我方坦克
 	{
@@ -299,3 +345,17 @@ void CGameMain::OnSpriteColSprite(const char *szSrcName, const char *szTarName)
 		tmpEnemy->OnSpriteColSprite(tarSprite);
 	}
 }
+
+void CGameMain::DeleteAllSprite()
+{
+	int n=m_vWeapon.size();
+	while(m_vWeapon.size()!=0)
+{
+		vector<CWeapon*>::iterator itr=m_vWeapon.begin();
+		CWeapon* cw = *itr;
+		m_vWeapon.erase(itr);
+		cw->DeleteSprite();
+		delete cw;
+	}
+}
+
