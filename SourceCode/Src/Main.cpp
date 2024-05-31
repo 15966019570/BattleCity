@@ -85,6 +85,7 @@ void CSystem::OnKeyUp( const int iKey )
 // 引擎捕捉到精灵与精灵碰撞之后，调用此函数
 void CSystem::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 {
+    g_GameMain.OnSpriteColSprite(szSrcName, szTarName);
 }
 
 //===========================================================================
@@ -93,6 +94,6 @@ void CSystem::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 // iColSide : 0 左边，1 右边，2 上边，3 下边
 void CSystem::OnSpriteColWorldLimit( const char *szName, const int iColSide )
 {
-    //g_GameMain.OnSpriteColWorldLimit( szName, iColSide );
+    g_GameMain.OnSpriteColWorldLimit( szName, iColSide );
 }
 

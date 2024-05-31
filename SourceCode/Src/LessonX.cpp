@@ -9,6 +9,7 @@
 #include "LessonX.h"
 #include "CTankPlayer.h"
 #include "CBullet.h"
+#include "CWeapon.h"
 #include <iostream>
 using namespace std;
 ////////////////////////////////////////////////////////////////////////////////
@@ -87,28 +88,48 @@ void CGameMain::GameInit()
     m_pBattleCity->SetSpriteVisible(false);
     m_pSpaceStart->SetSpriteVisible(false);
 
-    m_pTankPlayer           =   new CTankPlayer("myplayer");//新建一个名字是myPlayer的我方坦克对象
+    m_pTankPlayer = new CTankPlayer("myplayer");//新建一个名字是myPlayer的我方坦克对象
 	m_pTankPlayer->CloneSprite("player");//我方坦克克隆在funcode模板中存在的名字为player的坦克，表示新建的坦克对象有现在精灵的所有属性
 	m_pTankPlayer->Init();
 
-	m_pTankEnemy = new CTankEnemy("enemy");
-    m_pTankEnemy->Init();
+//	m_pTankEnemy = new CTankEnemy("enemy");
+//  m_pTankEnemy->Init();
 
     LoadMap();
 
     m_vWeapon.push_back(m_pTankPlayer);
+
+    m_pAim_nor = new CWeapon("myaim_nor");
+	m_pAim_nor->CloneSprite("aim_nor");
+	m_vWeapon.push_back(m_pAim_nor);
+	m_pAim_nor->SetSpriteCollisionReceive(true);
+	m_pAim_nor->SetSpritePosition(0.f,20.f);
+
 }
 //=============================================================================
 //
 // 每局游戏进行中
 void CGameMain::GameRun( float fDeltaTime )
 {
-    if(m_pTankEnemy)
-	{
-		m_pTankEnemy->OnMove(fDeltaTime);
-		m_pTankEnemy->OnFire(fDeltaTime);
-	}
+//    if(m_pTankEnemy)
+//	{
+//		m_pTankEnemy->OnMove(fDeltaTime);
+//		m_pTankEnemy->OnFire(fDeltaTime);
+//	}
+    AddTankEnemy(fDeltaTime);
 
+    for(int i=0;i<m_vWeapon.size();i++)
+	{
+		if(!m_vWeapon[i]->IsDead())
+        {
+            m_vWeapon[i]->OnMove(fDeltaTime);
+  			m_vWeapon[i]->OnFire(fDeltaTime);
+        }
+		else
+		{
+			DeleteWeaponByName(m_vWeapon[i]->GetName());
+		}
+	}
 }
 //=============================================================================
 //
@@ -147,17 +168,28 @@ void CGameMain::OnKeyUp(const int iKey)
     }
 }
 
-//void CGameMain::OnSpriteColWorldLimit(const char* szName, const int iColSide)
-//{
-//	if (strstr(szName, "player") != NULL) //判断碰到世界边界的坦克是否为我方坦克
-//	{
-//		m_pTankPlayer->SetSpriteLinearVelocity(0.f, 0.f);
-//	}
+void CGameMain::OnSpriteColWorldLimit(const char* szName, const int iColSide)
+{
+	if(strstr(szName,"player") != NULL) //判断碰到世界边界的坦克是否为我方坦克
+	{
+        m_pTankPlayer->SetSpriteLinearVelocity(0,0);
+	}
 //	if(m_pTankEnemy&&strcmp(m_pTankEnemy->GetName(),szName)==0)
 //	{
 //		m_pTankEnemy->OnMove();
 //	}
-//}
+    else if(strstr(szName,"enemy") != NULL)
+	{
+		CWeapon* pEnemy = FindWeaponByName(szName);
+		pEnemy->SetSpriteLinearVelocity(0.f,0.f);
+		pEnemy->OnMove();
+	}
+	else if(strstr(szName,"bullet") != NULL)
+	{
+		CWeapon* pBullet = FindWeaponByName(szName);
+		pBullet->SetHp(0);
+	}
+}
 
 void CGameMain::AddBullet( int iDir,float fPosX,float fPosY ,int iOwner)
 {
@@ -193,8 +225,8 @@ void CGameMain::LoadMap()
 				szName = CSystem::MakeSpriteName("wall",j+i*13+i);//重新起名
 				CWeapon* pWall = new CWeapon(szName);//新建对象
 				pWall->CloneSprite("wall"); //克隆墙块
-//				pWall->SetSpriteCollisionActive(0,1); //设置为接受碰撞
-//				pWall->SetSpriteCollisionResponse(COL_RESPONSE_CUSTOM);
+				pWall->SetSpriteCollisionActive(0,1); //设置为接受碰撞
+				pWall->SetSpriteCollisionResponse(COL_RESPONSE_CUSTOM);
 				x =float(-24+4*j);
 				y =float(-20+4*i);
 				pWall->SetSpritePosition(x,y);
@@ -208,10 +240,10 @@ CWeapon* CGameMain::FindWeaponByName(const char* szName)//根据名字查找到对象
 {
 	for(int i=0; i<m_vWeapon.size(); i++)
 	{
-			if(strcmp(szName,m_vWeapon[i]->GetName()) == 0)
-			{
-				return m_vWeapon[i];
-			}
+        if(strcmp(szName,m_vWeapon[i]->GetName()) == 0)
+        {
+            return m_vWeapon[i];
+        }
 	}
 }
 
@@ -231,5 +263,39 @@ void CGameMain::DeleteWeaponByName(const char* szName)//根据名字把精灵从容器中删
 		{
 			it++;
 		}
+	}
+}
+
+void CGameMain::AddTankEnemy(float fDeltaTime)
+{
+	m_fTankEnemyTime += fDeltaTime;
+	if(m_fTankEnemyTime > 5)
+	{
+		char* szName = CSystem::MakeSpriteName("enemy",m_iTankEnemyNumber);
+		CTankEnemy* m_pTankEnemy = new CTankEnemy(szName);
+		m_pTankEnemy->CloneSprite("enemy");
+		m_pTankEnemy->Init();
+        m_iTankEnemyNumber++;
+		m_vWeapon.push_back(m_pTankEnemy);  //把创建的敌方坦克插入到容器中
+		m_fTankEnemyTime=0.f;
+	}
+}
+
+void CGameMain::OnSpriteColSprite(const char *szSrcName, const char *szTarName)
+{
+	CWeapon* tarSprite = FindWeaponByName(szTarName);
+	if(strstr(szSrcName,"bullet") != NULL)//发送碰撞为子弹
+	{
+		CBullet *tmpBullet = (CBullet*)FindWeaponByName(szSrcName);
+		tmpBullet->OnSpriteColSprite(tarSprite);
+	}
+	else if(strcmp(szSrcName,"myplayer")==0) //发送碰撞为我方坦克
+	{
+		m_pTankPlayer->OnSpriteColSprite(tarSprite);
+	}
+	else if(strstr(szSrcName,"enemy") != NULL)//发送碰撞为敌方坦克
+	{
+		CTankEnemy* tmpEnemy = (CTankEnemy*)FindWeaponByName(szSrcName);
+		tmpEnemy->OnSpriteColSprite(tarSprite);
 	}
 }

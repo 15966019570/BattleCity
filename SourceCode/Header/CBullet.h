@@ -20,6 +20,8 @@ class CBullet : public CWeapon
 
         void            OnMove(int iDir);
 
+        void            OnSpriteColSprite(CWeapon* pSprite);
+
     protected:
 
 };

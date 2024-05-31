@@ -1,58 +1,60 @@
 # depslib dependency file v1.0
-1420212244 source:d:\c++ history\funcode\battlecity\sourcecode\icon.rc
+1716984342 source:d:\c++ history\funcode\battlecity\sourcecode\icon.rc
 
-1716960674 source:d:\c++ history\funcode\battlecity\sourcecode\src\lessonx.cpp
+1717137431 source:d:\c++ history\funcode\battlecity\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonClass.h"
 	"LessonX.h"
 	"CTankPlayer.h"
 	"CBullet.h"
+	"CWeapon.h"
 	<iostream>
 
-1461255076 d:\c++ history\funcode\battlecity\sourcecode\header\commonclass.h
+1716984342 d:\c++ history\funcode\battlecity\sourcecode\header\commonclass.h
 	<windows.h>
 
-1716971731 d:\c++ history\funcode\battlecity\sourcecode\header\lessonx.h
+1717136217 d:\c++ history\funcode\battlecity\sourcecode\header\lessonx.h
 	<Windows.h>
 	"CTankPlayer.h"
 	"CTankEnemy.h"
 	<vector>
+	"CWeapon.h"
 
-1716896309 source:d:\c++ history\funcode\battlecity\sourcecode\src\main.cpp
+1717137531 source:d:\c++ history\funcode\battlecity\sourcecode\src\main.cpp
 	"CommonClass.h"
 	"LessonX.h"
 
-1716969115 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankplayer.cpp
+1717134660 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankplayer.cpp
 	"CTankPlayer.h"
 	"CWeapon.h"
 	"windows.h"
 	"LessonX.h"
 
-1716969305 d:\c++ history\funcode\battlecity\sourcecode\header\ctankplayer.h
+1716985556 d:\c++ history\funcode\battlecity\sourcecode\header\ctankplayer.h
 	"CWeapon.h"
 	<Windows.h>
 
-1716969209 source:d:\c++ history\funcode\battlecity\sourcecode\src\cbullet.cpp
+1716985743 source:d:\c++ history\funcode\battlecity\sourcecode\src\cbullet.cpp
 	"CBullet.h"
 	"CWeapon.h"
 
-1716969360 d:\c++ history\funcode\battlecity\sourcecode\header\cbullet.h
+1716985665 d:\c++ history\funcode\battlecity\sourcecode\header\cbullet.h
 	"CWeapon.h"
 	<Windows.h>
 
-1716969230 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankenemy.cpp
+1717135866 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankenemy.cpp
 	"CTankEnemy.h"
 	"CWeapon.h"
 	"LessonX.h"
 
-1716969337 d:\c++ history\funcode\battlecity\sourcecode\header\ctankenemy.h
+1716985825 d:\c++ history\funcode\battlecity\sourcecode\header\ctankenemy.h
 	<windows.h>
 	"CWeapon.h"
 
-1716969659 d:\c++ history\funcode\battlecity\sourcecode\header\cweapon.h
+1716986791 d:\c++ history\funcode\battlecity\sourcecode\header\cweapon.h
 	"CommonClass.h"
 
-1716968688 source:d:\c++ history\funcode\battlecity\sourcecode\src\cweapon.cpp
+1717135941 source:d:\c++ history\funcode\battlecity\sourcecode\src\cweapon.cpp
 	"CWeapon.h"
 	"CommonClass.h"
 

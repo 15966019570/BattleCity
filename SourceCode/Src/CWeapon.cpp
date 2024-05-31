@@ -17,7 +17,7 @@ CWeapon::~CWeapon()
 
 bool CWeapon::IsDead()
 {
-	if(m_iHp == 0)
+	if(m_iHp != 2)
 	{
 		return true;
 	}

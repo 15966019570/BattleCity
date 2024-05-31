@@ -23,7 +23,7 @@ void CTankPlayer::Init()
 {
     SetHp(2);
 	SetSpritePosition(0.f,0.f);
-	//SetSpriteWorldLimit(WORLD_LIMIT_NULL, -26, -22, 26, 22);
+	SetSpriteWorldLimit(WORLD_LIMIT_NULL, -26, -22, 26, 22);
 	SetSpriteCollisionActive(1,1);//设置为可以接受和发生碰撞
 	SetSpriteVisible(true);
 }
@@ -89,4 +89,22 @@ void CTankPlayer::OnFire()
 		break;
 	}
 	g_GameMain.AddBullet(GetDir(),x,y,1);
+}
+
+void CTankPlayer::OnSpriteColSprite(CWeapon* pSprite)
+{
+	if(pSprite == NULL)
+	{
+		return;
+	}
+	else if(strstr(pSprite->GetName(),"bullet") != NULL)
+	{
+		SetHp(0);
+	}
+	else if(strstr(pSprite->GetName(),"wall") != NULL)
+	{
+		SetSpeedX(0);
+		SetSpeedY(0);
+		SetSpriteLinearVelocity(GetSpeedX(),GetSpeedY());
+	}
 }

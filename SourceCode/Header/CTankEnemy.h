@@ -25,6 +25,8 @@ class CTankEnemy : public CWeapon
 
         void            OnFire(float fDeltaTime);
 
+        void            OnSpriteColSprite(CWeapon* pSprite);
+
     protected:
 
 };

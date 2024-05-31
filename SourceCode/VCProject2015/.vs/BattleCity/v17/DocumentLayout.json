@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\VCProject2015\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\LessonX.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\LessonX.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -25,37 +25,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp",
               "RelativeDocumentMoniker": "..\\Src\\Main.cpp",
               "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp",
               "RelativeToolTip": "..\\Src\\Main.cpp",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-27T08:06:30.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LessonX.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\LessonX.cpp",
               "RelativeDocumentMoniker": "..\\Src\\LessonX.cpp",
               "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\LessonX.cpp",
               "RelativeToolTip": "..\\Src\\LessonX.cpp",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAAB8AAAAAAAAA",
+              "ViewState": "AQIAALEAAAAAAAAAAAAnwIIAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-27T08:06:29.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LessonX.h",
               "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h",
               "RelativeDocumentMoniker": "..\\Header\\LessonX.h",
@@ -68,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CTankPlayer.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp",
               "RelativeDocumentMoniker": "..\\Src\\CTankPlayer.cpp",
               "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp",
               "RelativeToolTip": "..\\Src\\CTankPlayer.cpp",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAAB0AAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-27T08:04:41.39Z",
               "EditorCaption": ""
@@ -89,8 +89,7 @@
               "RelativeToolTip": "..\\Header\\CTankPlayer.h",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-27T08:04:12.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T08:04:12.784Z"
             }
           ]
         }

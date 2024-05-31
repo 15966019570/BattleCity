@@ -18,6 +18,8 @@ class CTankPlayer : public CWeapon
         void            OnMove(int iKey, bool bPress);
         void            OnFire();
 
+        void            OnSpriteColSprite(CWeapon* pSprite);
+
     protected:
 };
 
