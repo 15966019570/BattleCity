@@ -9,16 +9,19 @@ class CTankEnemy : public CWeapon
 
         float           m_fChangeDirTime;
         float           m_fBulletCreateTime;
+        float           m_fSpeed;
     public:
         CTankEnemy(const char* szName);
         virtual ~CTankEnemy();
 
         void            Init();
 
-        //set方法
+        //set路陆路篓
         void            SetChangeDirTime(float Time)    {m_fChangeDirTime = Time;}
-        //get方法
+        void            SetSpeed(float speed)           {m_fSpeed = speed;}
+        //get鏂规硶
         float           GetChangeDirTime(float Time)    {return m_fChangeDirTime;}
+        float           GetSpeed()                      {return m_fSpeed;}
 
         void            OnMove();
         void            OnMove(float fDeltaTime);

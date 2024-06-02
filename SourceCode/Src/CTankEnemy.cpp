@@ -53,22 +53,23 @@ void CTankEnemy::OnMove()
 //		iDir = 0;
 //    }
 	SetDir(iDir);
+    float speed = GetSpeed();
     switch(GetDir())
 	{
 	case 0:
 		SetSpeedX(0);
-		SetSpeedY(-8);
+		SetSpeedY(-1*speed);
 		break;
 	case 1:
-		SetSpeedX(8);
+		SetSpeedX(speed);
 		SetSpeedY(0);
 		break;
 	case 2:
 		SetSpeedX(0);
-		SetSpeedY(8);
+		SetSpeedY(speed);
 		break;
 	case 3:
-		SetSpeedX(-8);
+		SetSpeedX(-1*speed);
 		SetSpeedY(0);
 		break;
 	}

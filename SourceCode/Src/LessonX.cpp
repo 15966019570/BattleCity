@@ -37,6 +37,9 @@ CGameMain::CGameMain()
     m_iEnemy                =   0;//敌人数量
     m_iHight                =   0;
     m_fDeltaTime            =   0.f;
+    m_bWallStart            =   true;
+    m_bPlayerSpeed          =   true;
+    m_bEnemySpeed           =   true;
 }
 //==============================================================================
 //
@@ -45,6 +48,9 @@ CGameMain::~CGameMain()
 {
     free(m_pBattleCity);
     free(m_pSpaceStart);
+    free(m_pScore);
+    free(m_pHight);
+    free(m_pEnemy);
 }
 
 //==============================================================================
@@ -190,10 +196,28 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
 	{
 		m_pTankPlayer->OnMove(iKey, true);
 	}
-    if(iKey == KEY_J)//判断按下键是够为J键
+	switch(iKey)
 	{
+    case KEY_J://判断按下键是够为J键
 		m_pTankPlayer->OnFire();
+        break;
+    case KEY_6:
+        StopEnemy();
+        m_bEnemySpeed=!m_bEnemySpeed;
+        break;
+    case KEY_2:
+        PlayerSpeedFast();
+        m_bPlayerSpeed=!m_bPlayerSpeed;
+        break;
+    case KEY_4:
+        RigidityMap();
+        m_bWallStart=!m_bWallStart;
+        break;
 	}
+//    if(iKey == KEY_J)
+//	{
+//		m_pTankPlayer->OnFire();
+//	}
 
 }
 
@@ -272,6 +296,63 @@ void CGameMain::LoadMap()
 			}
 		}
 	}
+}
+
+void CGameMain::RigidityMap()
+{
+    for(auto wall : m_vWeapon)
+    {
+        const char* szName = wall->GetName();
+        if(strstr(szName,"wall") != NULL)
+        {
+            if(m_bWallStart)
+            {
+                wall->SetSpriteCollisionActive(0,0);
+            }
+            else
+            {
+                wall->SetSpriteCollisionActive(0,1);
+            }
+        }
+    }
+}
+
+void CGameMain::PlayerSpeedFast()
+{
+    for(auto player : m_vWeapon)
+    {
+        const char* szName = player->GetName();
+        if(strstr(szName,"player") != NULL)
+        {
+            if(m_bPlayerSpeed)
+            {
+                player->SetSpeed(12);
+            }
+            else
+            {
+                player->SetSpeed(8);
+            }
+        }
+    }
+}
+
+void CGameMain::StopEnemy()
+{
+    for(auto enemy : m_vWeapon)
+    {
+        const char* szName = enemy->GetName();
+        if(strstr(szName,"enemy") != NULL)
+        {
+            if(m_bEnemySpeed)
+            {
+                enemy->SetSpeed(0);
+            }
+            else
+            {
+                enemy->SetSpeed(8);
+            }
+        }
+    }
 }
 
 CWeapon* CGameMain::FindWeaponByName(const char* szName)//根据名字查找到对象
@@ -358,4 +439,3 @@ void CGameMain::DeleteAllSprite()
 		delete cw;
 	}
 }
-

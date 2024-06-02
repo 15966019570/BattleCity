@@ -32,6 +32,9 @@ class CWeapon : public CSprite
 		virtual void    OnFire(float deltaTime){};  //发射子弹函数
 		virtual void    OnSpriteColSprite(CWeapon* pSprite){}; //精灵与精灵碰撞时处理函数
 
+        virtual void    SetSpeed(float speed){};
+        virtual float   GetSpeed(){};
+
     protected:
 
 };

@@ -1,4 +1,4 @@
-//-------------------------- 6/2/2024 -- 14:39:11 -----
+//-------------------------- 6/2/2024 -- 16:38:37 -----
 Processor Init:
    Intel (unknown, Pentium Pro/II/III family), ~2.27 Ghz
      (timed at roughly 2.27 Ghz)
@@ -244,6 +244,54 @@ t2dSceneGraph::addToScene() - Object '1453' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1454' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1455' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1456' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1457' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1458' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1459' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1460' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1461' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1462' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1463' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1464' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1465' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1466' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1467' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1468' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1469' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1470' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1471' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1472' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1473' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1474' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1475' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1476' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1477' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1478' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1479' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1480' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1481' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1482' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1483' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1484' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1485' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1486' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1487' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1488' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1489' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1490' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1491' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1492' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1493' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1494' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1495' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1496' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1497' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1498' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1499' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1500' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1501' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1502' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1503' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1504' is already in a SceneGraph!.
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

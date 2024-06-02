@@ -26,7 +26,9 @@ private:
     CSprite*        m_pSpaceStart;
 
     CTankPlayer*    m_pTankPlayer;              //玩家
+    bool            m_bPlayerSpeed;
 //    CTankEnemy*     m_pTankEnemy;               //机器人
+    bool            m_bEnemySpeed;
     vector<CWeapon*>m_vWeapon;
 
 	float           m_fTankEnemyTime;
@@ -44,6 +46,7 @@ private:
     int             m_iHight;//几局最高分
     float           m_fDeltaTime;//表示游戏时间
 
+	bool            m_bWallStart;
 	int				g_iMap[11][13] =
 	{
 		/*{0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -97,6 +100,7 @@ public:
 
     void            AddBullet( int iDir,float fPosX,float fPosY ,int iOwner);
     void            LoadMap();
+    void            RigidityMap();
 
     CWeapon*        FindWeaponByName(const char* szName);
     void            DeleteWeaponByName(const char* szName);
@@ -105,7 +109,9 @@ public:
 
     void            OnSpriteColSprite(const char *szSrcName, const char *szTarName);
 
-    void            DeleteAllSprite();
+    void            DeleteAllSprite();//按4键我方坦克能穿墙，再按4键恢复。
+    void            PlayerSpeedFast();//按0键我方坦克速度加快，再按0键恢复。
+    void            StopEnemy();//按6键敌方坦克全固定，再按6键恢复。
 };
 
 /////////////////////////////////////////////////////////////////////////////////

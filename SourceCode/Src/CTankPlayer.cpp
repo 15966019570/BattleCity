@@ -10,7 +10,7 @@
 
 CTankPlayer::CTankPlayer(const char* szName):CWeapon(szName) //对构造函数进行实现
 {
-
+    m_fSpeed            =   8;
 }
 
 
@@ -30,6 +30,7 @@ void CTankPlayer::Init()
 
 void CTankPlayer::OnMove(int iKey, bool bPress)
 {
+    float speed = GetSpeed();
 	if(bPress)
     {
         switch (iKey)
@@ -37,21 +38,21 @@ void CTankPlayer::OnMove(int iKey, bool bPress)
         case KEY_W:
 			SetDir(0);
 			SetSpeedX(0);
-			SetSpeedY(-8);
+			SetSpeedY(speed*-1);
 			break;
 		case KEY_D:
 			SetDir(1);
-			SetSpeedX(8);
+			SetSpeedX(speed);
 			SetSpeedY(0);
 			break;
 		case KEY_S:
 			SetDir(2);
 			SetSpeedX(0);
-			SetSpeedY(8);
+			SetSpeedY(speed);
 			break;
 		case KEY_A:
 			SetDir(3);
-			SetSpeedX(-8);
+			SetSpeedX(-1*speed);
 			SetSpeedY(0);
 			break;
 		}
