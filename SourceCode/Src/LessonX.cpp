@@ -37,7 +37,6 @@ CGameMain::CGameMain()
     m_iEnemy                =   0;//敌人数量
     m_iHight                =   0;
     m_fDeltaTime            =   0.f;
-
 }
 //==============================================================================
 //
@@ -209,21 +208,21 @@ void CGameMain::OnKeyUp(const int iKey)
 
 void CGameMain::OnSpriteColWorldLimit(const char* szName, const int iColSide)
 {
-	if(strstr(szName,"player") != NULL) //判断碰到世界边界的坦克是否为我方坦克
-	{
-        m_pTankPlayer->SetSpriteLinearVelocity(0,0);
-	}
-//	if(m_pTankEnemy&&strcmp(m_pTankEnemy->GetName(),szName)==0)
+//	if(strstr(szName,"player") != NULL) //判断碰到世界边界的坦克是否为我方坦克
 //	{
-//		m_pTankEnemy->OnMove();
+//        m_pTankPlayer->SetSpriteLinearVelocity(0,0);
 //	}
-    else if(strstr(szName,"enemy") != NULL)
-	{
-		CWeapon* pEnemy = FindWeaponByName(szName);
-		pEnemy->SetSpriteLinearVelocity(0.f,0.f);
-		pEnemy->OnMove();
-	}
-	else if(strstr(szName,"bullet") != NULL)
+////	if(m_pTankEnemy&&strcmp(m_pTankEnemy->GetName(),szName)==0)
+////	{
+////		m_pTankEnemy->OnMove();
+////	}
+//    else if(strstr(szName,"enemy") != NULL)
+//	{
+//		CWeapon* pEnemy = FindWeaponByName(szName);
+//		pEnemy->SetSpriteLinearVelocity(0.f,0.f);
+//		pEnemy->OnMove();
+//	}else
+	if(strstr(szName,"bullet") != NULL)
 	{
 		CWeapon* pBullet = FindWeaponByName(szName);
 		pBullet->SetHp(0);
@@ -314,6 +313,7 @@ void CGameMain::AddTankEnemy(float fDeltaTime)
 		CTankEnemy* m_pTankEnemy = new CTankEnemy(szName);
 		m_pTankEnemy->CloneSprite("enemy");
 		m_pTankEnemy->Init();
+		m_pTankEnemy->SetSpriteVisible(true);
         m_iTankEnemyNumber++;
 		m_vWeapon.push_back(m_pTankEnemy);  //把创建的敌方坦克插入到容器中
 		m_fTankEnemyTime=0.f;
@@ -350,7 +350,7 @@ void CGameMain::DeleteAllSprite()
 {
 	int n=m_vWeapon.size();
 	while(m_vWeapon.size()!=0)
-{
+    {
 		vector<CWeapon*>::iterator itr=m_vWeapon.begin();
 		CWeapon* cw = *itr;
 		m_vWeapon.erase(itr);

@@ -37,7 +37,7 @@ void CTankEnemy::Init()
 	SetSpriteLinearVelocity(0.f,8.f);
 	SetSpriteCollisionActive(1,1); //设置可以接受和发送碰撞
 	SetSpriteRotation(float(90*GetDir()));
-	SetSpriteWorldLimit(WORLD_LIMIT_NULL,-26, -22, 26, 22);
+//	SetSpriteWorldLimit(WORLD_LIMIT_NULL,-26, -22, 26, 22);
 }
 
 void CTankEnemy::OnMove()
