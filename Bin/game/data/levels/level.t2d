@@ -69,7 +69,7 @@
       sourceRect = "2.36011e-039 0 2.36011e-039 6.22921e-039";
       canSaveDynamicFields = "1";
       Visible = "0";
-      Position = "-26.750 -43.250";
+      Position = "-24.241 -20.240";
       size = "3.500 3.500";
       Layer = "1";
       WorldLimitMode = "STICKY";
@@ -304,7 +304,7 @@
       sourceRect = "2.36011e-039 0 2.36011e-039 6.22921e-039";
       canSaveDynamicFields = "1";
       Visible = "0";
-      Position = "-21.750 -43.250";
+      Position = "-21.750 -20.240";
       size = "3.500 3.500";
       Layer = "1";
       WorldLimitMode = "STICKY";

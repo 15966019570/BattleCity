@@ -100,7 +100,7 @@ public:
 
     void            AddBullet( int iDir,float fPosX,float fPosY ,int iOwner);
     void            LoadMap();
-    void            RigidityMap();
+    void            RigidityMap();//按4键我方坦克能穿墙，再按4键恢复。
 
     CWeapon*        FindWeaponByName(const char* szName);
     void            DeleteWeaponByName(const char* szName);
@@ -109,9 +109,10 @@ public:
 
     void            OnSpriteColSprite(const char *szSrcName, const char *szTarName);
 
-    void            DeleteAllSprite();//按4键我方坦克能穿墙，再按4键恢复。
+    void            DeleteAllSprite();
     void            PlayerSpeedFast();//按0键我方坦克速度加快，再按0键恢复。
     void            StopEnemy();//按6键敌方坦克全固定，再按6键恢复。
+    void            PlayerTP();//按1键我方坦克传送到别处。
 };
 
 /////////////////////////////////////////////////////////////////////////////////

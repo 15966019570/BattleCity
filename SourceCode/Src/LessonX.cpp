@@ -201,10 +201,8 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     case KEY_J://判断按下键是够为J键
 		m_pTankPlayer->OnFire();
         break;
-    case KEY_6:
-        StopEnemy();
-        m_bEnemySpeed=!m_bEnemySpeed;
-        break;
+    case KEY_1:
+        PlayerTP();
     case KEY_2:
         PlayerSpeedFast();
         m_bPlayerSpeed=!m_bPlayerSpeed;
@@ -212,6 +210,10 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     case KEY_4:
         RigidityMap();
         m_bWallStart=!m_bWallStart;
+        break;
+    case KEY_6:
+        StopEnemy();
+        m_bEnemySpeed=!m_bEnemySpeed;
         break;
 	}
 //    if(iKey == KEY_J)
@@ -355,6 +357,19 @@ void CGameMain::StopEnemy()
     }
 }
 
+void CGameMain::PlayerTP()
+{
+    int x = CSystem::RandomRange(-26,26);
+    int y = CSystem::RandomRange(-22,22);
+    for(auto player : m_vWeapon)
+    {
+        const char* szName = player->GetName();
+        if(strstr(szName,"player") != NULL)
+        {
+            player->SetSpritePosition(x,y);
+        }
+    }
+}
 CWeapon* CGameMain::FindWeaponByName(const char* szName)//根据名字查找到对象
 {
 	for(int i=0; i<m_vWeapon.size(); i++)

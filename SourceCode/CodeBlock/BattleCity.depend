@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1716984342 source:d:\c++ history\funcode\battlecity\sourcecode\icon.rc
 
-1717316685 source:d:\c++ history\funcode\battlecity\sourcecode\src\lessonx.cpp
+1717385509 source:d:\c++ history\funcode\battlecity\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonClass.h"
 	"LessonX.h"
@@ -13,7 +13,7 @@
 1716984342 d:\c++ history\funcode\battlecity\sourcecode\header\commonclass.h
 	<windows.h>
 
-1717317397 d:\c++ history\funcode\battlecity\sourcecode\header\lessonx.h
+1717385416 d:\c++ history\funcode\battlecity\sourcecode\header\lessonx.h
 	<Windows.h>
 	"CTankPlayer.h"
 	"CTankEnemy.h"
