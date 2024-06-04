@@ -42,6 +42,7 @@ CGameMain::CGameMain()
     m_bEnemySpeed           =   true;
     m_bTracePlayer          =   true;
     m_bFish                 =   false;
+    m_bInvincibility        =   true;
 }
 //==============================================================================
 //
@@ -211,6 +212,17 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     case KEY_1:
         PlayerTP();
         break;
+    case KEY_2:
+        if(m_bInvincibility)
+        {
+            m_pTankPlayer->MakeHp(-1);
+        }
+        else
+        {
+            m_pTankPlayer->MakeHp(2);
+        }
+        m_bInvincibility=!m_bInvincibility;
+        break;
     case KEY_3:
         m_bFish=!m_bFish;
         break;
@@ -261,7 +273,7 @@ void CGameMain::OnSpriteColWorldLimit(const char* szName, const int iColSide)
 	if(strstr(szName,"bullet") != NULL)
 	{
 		CWeapon* pBullet = FindWeaponByName(szName);
-		pBullet->SetHp(0);
+		pBullet->SetHp(-2);
 	}
 }
 

@@ -32,6 +32,7 @@ private:
     vector<CWeapon*>m_vWeapon;
     bool            m_bTracePlayer;
     bool            m_bFish;
+    bool            m_bInvincibility;
 
 	float           m_fTankEnemyTime;
 	int             m_iTankEnemyNumber;

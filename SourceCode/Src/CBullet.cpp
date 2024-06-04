@@ -44,14 +44,14 @@ void CBullet::OnSpriteColSprite(CWeapon* pSprite)
 	{
 		return;
 	}
-	SetHp(0);
+	SetHp(-2);
 	if(GetOwner() == 1 && strstr(pSprite->GetName(),"aim_nor") != NULL)  //我方坦克子弹与军营发生碰撞
 	{
 		return;
 	}
-	if(GetOwner() == 0 && strstr(pSprite->GetName(),"enemy") != NULL) //敌方坦克子弹打中地方坦克
+	if(GetOwner() == 0 && strstr(pSprite->GetName(),"enemy") != NULL) //敌方坦克子弹打中敌方坦克
     {
 		return;
 	}
-    pSprite->SetHp(0);
+    pSprite->SetHp(-2);
 }

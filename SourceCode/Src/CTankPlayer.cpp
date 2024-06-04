@@ -100,7 +100,7 @@ void CTankPlayer::OnSpriteColSprite(CWeapon* pSprite)
 	}
 	else if(strstr(pSprite->GetName(),"bullet") != NULL)
 	{
-		SetHp(0);
+		SetHp(-2);
 	}
 	else if(strstr(pSprite->GetName(),"wall") != NULL)
 	{

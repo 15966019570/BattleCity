@@ -15,7 +15,8 @@ class CWeapon : public CSprite
         virtual ~CWeapon();
 
         //set·½·¨
-        void            SetHp(int hp)                   {m_iHp = hp;}
+        void            SetHp(int hp)                   {m_iHp += hp;}
+        void            MakeHp(int hp)                  {m_iHp = hp;}
         void            SetDir(int dir)                 {m_iDir = dir;}
         void            SetSpeedX(float speedX)         {m_fSpeedX = speedX;}
         void            SetSpeedY(float speedY)         {m_fSpeedY = speedY;}
