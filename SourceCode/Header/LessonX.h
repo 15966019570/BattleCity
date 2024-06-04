@@ -31,6 +31,7 @@ private:
     bool            m_bEnemySpeed;
     vector<CWeapon*>m_vWeapon;
     bool            m_bTracePlayer;
+    bool            m_bFish;
 
 	float           m_fTankEnemyTime;
 	int             m_iTankEnemyNumber;

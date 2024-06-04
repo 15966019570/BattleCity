@@ -41,6 +41,7 @@ CGameMain::CGameMain()
     m_bPlayerSpeed          =   true;
     m_bEnemySpeed           =   true;
     m_bTracePlayer          =   true;
+    m_bFish                 =   false;
 }
 //==============================================================================
 //
@@ -210,6 +211,9 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     case KEY_1:
         PlayerTP();
         break;
+    case KEY_3:
+        m_bFish=!m_bFish;
+        break;
     case KEY_4:
         RigidityMap();
         m_bWallStart=!m_bWallStart;
@@ -265,7 +269,14 @@ void CGameMain::AddBullet( int iDir,float fPosX,float fPosY ,int iOwner)
 {
 	char* szName = CSystem::MakeSpriteName("bullet",m_iBulletNum);//创建坦克名字
 	CBullet* pBullet = new CBullet(szName);
-	pBullet->CloneSprite("bullet");
+	if(m_bFish&&iOwner == 1)
+    {
+        pBullet->CloneSprite("fish");
+	}
+	else
+    {
+        pBullet->CloneSprite("bullet");
+    }
 	pBullet->SetSpriteWorldLimit(WORLD_LIMIT_NULL,-26, -22, 26, 22); //设置世界边界
 	pBullet->SetSpritePosition(fPosX,fPosY);
 	pBullet->SetSpriteCollisionSend(true); //设置接收碰撞

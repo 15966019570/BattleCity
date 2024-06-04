@@ -202,4 +202,36 @@ $managedDatablockSet = new SimSet() {
       allowUnload = "0";
       force16Bit = "0";
    };
+   new t2dImageMapDatablock(pufferfishswimsheetImageMap) {
+      imageName = "~/data/images/pufferfishswimsheet.dds";
+      imageMode = "CELL";
+      frameCount = "-1";
+      filterMode = "SMOOTH";
+      filterPad = "0";
+      preferPerf = "0";
+      cellRowOrder = "1";
+      cellOffsetX = "0";
+      cellOffsetY = "0";
+      cellStrideX = "0";
+      cellStrideY = "0";
+      cellCountX = "-1";
+      cellCountY = "-1";
+      cellWidth = "256";
+      cellHeight = "128";
+      preload = "1";
+      allowUnload = "0";
+      force16Bit = "0";
+         canSaveDynamicFields = "1";
+   };
+   new t2dAnimationDatablock(pufferfishswimsheetImageMapAnimation) {
+      imageMap = "pufferfishswimsheetImageMap";
+      animationFrames = "0 1 2 3 2 1";
+      animationTime = "0.6";
+      animationCycle = "1";
+      randomStart = "0";
+      startFrame = "0";
+      animationPingPong = "0";
+      animationReverse = "0";
+         canSaveDynamicFields = "1";
+   };
 };

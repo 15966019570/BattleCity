@@ -312,4 +312,17 @@
       WorldLimitMax = "26.000 22.000";
          mountID = "17";
    };
+   new t2dStaticSprite(fish) {
+      imageMap = "pufferfishswimsheetImageMap";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 0 0";
+      canSaveDynamicFields = "1";
+      Position = "-36.176 -44.332";
+      size = "2.352 1.335";
+      Rotation = "270";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "18";
+   };
 };
