@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1716984342 source:d:\c++ history\funcode\battlecity\sourcecode\icon.rc
 
-1717385509 source:d:\c++ history\funcode\battlecity\sourcecode\src\lessonx.cpp
+1717491912 source:d:\c++ history\funcode\battlecity\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonClass.h"
 	"LessonX.h"
@@ -13,7 +13,7 @@
 1716984342 d:\c++ history\funcode\battlecity\sourcecode\header\commonclass.h
 	<windows.h>
 
-1717385416 d:\c++ history\funcode\battlecity\sourcecode\header\lessonx.h
+1717490892 d:\c++ history\funcode\battlecity\sourcecode\header\lessonx.h
 	<Windows.h>
 	"CTankPlayer.h"
 	"CTankEnemy.h"
@@ -24,13 +24,13 @@
 	"CommonClass.h"
 	"LessonX.h"
 
-1717316878 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankplayer.cpp
+1717490675 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankplayer.cpp
 	"CTankPlayer.h"
 	"CWeapon.h"
 	"windows.h"
 	"LessonX.h"
 
-1717316768 d:\c++ history\funcode\battlecity\sourcecode\header\ctankplayer.h
+1717491879 d:\c++ history\funcode\battlecity\sourcecode\header\ctankplayer.h
 	"CWeapon.h"
 	<Windows.h>
 
@@ -42,16 +42,16 @@
 	"CWeapon.h"
 	<Windows.h>
 
-1717317133 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankenemy.cpp
+1717492040 source:d:\c++ history\funcode\battlecity\sourcecode\src\ctankenemy.cpp
 	"CTankEnemy.h"
-	"CWeapon.h"
+	"CTankPlayer.h"
 	"LessonX.h"
 
-1717317082 d:\c++ history\funcode\battlecity\sourcecode\header\ctankenemy.h
+1717491879 d:\c++ history\funcode\battlecity\sourcecode\header\ctankenemy.h
 	<windows.h>
-	"CWeapon.h"
+	"CTankPlayer.h"
 
-1717316814 d:\c++ history\funcode\battlecity\sourcecode\header\cweapon.h
+1717489576 d:\c++ history\funcode\battlecity\sourcecode\header\cweapon.h
 	"CommonClass.h"
 
 1717313731 source:d:\c++ history\funcode\battlecity\sourcecode\src\cweapon.cpp

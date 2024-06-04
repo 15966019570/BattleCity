@@ -40,6 +40,7 @@ CGameMain::CGameMain()
     m_bWallStart            =   true;
     m_bPlayerSpeed          =   true;
     m_bEnemySpeed           =   true;
+    m_bTracePlayer          =   true;
 }
 //==============================================================================
 //
@@ -101,7 +102,7 @@ void CGameMain::GameInit()
     m_pSpaceStart->SetSpriteVisible(false);
 
     m_pTankPlayer = new CTankPlayer("myplayer");//新建一个名字是myPlayer的我方坦克对象
-	m_pTankPlayer->CloneSprite("player");//我方坦克克隆在funcode模板中存在的名字为player的坦克，表示新建的坦克对象有现在精灵的所有属性
+	m_pTankPlayer->CloneSprite("player");       //我方坦克克隆在funcode模板中存在的名字为player的坦克，表示新建的坦克对象有现在精灵的所有属性
 	m_pTankPlayer->Init();
 
 //	m_pTankEnemy = new CTankEnemy("enemy");
@@ -164,6 +165,7 @@ void CGameMain::GameRun( float fDeltaTime )
 	m_pHight->SetTextValue(m_iHight);
 	m_pEnemy->SetTextValue(m_iEnemy);
 
+	TracePlayer(fDeltaTime);
 }
 //=============================================================================
 //
@@ -201,11 +203,12 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     case KEY_J://判断按下键是够为J键
 		m_pTankPlayer->OnFire();
         break;
-    case KEY_1:
-        PlayerTP();
-    case KEY_2:
+    case KEY_0:
         PlayerSpeedFast();
         m_bPlayerSpeed=!m_bPlayerSpeed;
+        break;
+    case KEY_1:
+        PlayerTP();
         break;
     case KEY_4:
         RigidityMap();
@@ -214,6 +217,9 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     case KEY_6:
         StopEnemy();
         m_bEnemySpeed=!m_bEnemySpeed;
+        break;
+    case KEY_9:
+        m_bTracePlayer=!m_bTracePlayer;
         break;
 	}
 //    if(iKey == KEY_J)
@@ -370,6 +376,25 @@ void CGameMain::PlayerTP()
         }
     }
 }
+
+void CGameMain::TracePlayer(float fDeltaTime)
+{
+    for(auto vWeapon : m_vWeapon )
+    {
+        // 追踪
+        if(m_bTracePlayer==false)
+        {
+            vWeapon->TrackMove();
+            vWeapon->OnFire(fDeltaTime);
+        }
+        else
+        {
+            vWeapon->OnMove(fDeltaTime);
+            vWeapon->OnFire(fDeltaTime);
+        }
+    }
+}
+
 CWeapon* CGameMain::FindWeaponByName(const char* szName)//根据名字查找到对象
 {
 	for(int i=0; i<m_vWeapon.size(); i++)

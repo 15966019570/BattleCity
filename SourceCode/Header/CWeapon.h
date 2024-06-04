@@ -25,15 +25,16 @@ class CWeapon : public CSprite
         float           GetSpeedX()                     {return m_fSpeedX;}
         float           GetSpeedY()                     {return m_fSpeedY;}
 
-        bool	        IsDead();   //判断精灵是否死亡
-		virtual void    Init(){}; //初始化函数
-		virtual void    OnMove(float fDeltaTime){};  //敌方坦克移动函数
+        bool	        IsDead();                               //判断精灵是否死亡
+		virtual void    Init(){};                               //初始化函数
+		virtual void    OnMove(float fDeltaTime){};             //敌方坦克移动函数
 		virtual void    OnMove(){};
-		virtual void    OnFire(float deltaTime){};  //发射子弹函数
-		virtual void    OnSpriteColSprite(CWeapon* pSprite){}; //精灵与精灵碰撞时处理函数
+		virtual void    OnFire(float deltaTime){};              //发射子弹函数
+		virtual void    OnSpriteColSprite(CWeapon* pSprite){};  //精灵与精灵碰撞时处理函数
 
         virtual void    SetSpeed(float speed){};
         virtual float   GetSpeed(){};
+        virtual void    TrackMove(){};
 
     protected:
 

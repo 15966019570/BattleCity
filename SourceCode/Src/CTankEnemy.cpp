@@ -1,11 +1,12 @@
 #include "CTankEnemy.h"
-#include "CWeapon.h"
+#include "CTankPlayer.h"
 #include "LessonX.h"
 
-CTankEnemy::CTankEnemy(const char* szName):CWeapon(szName) //对构造函数进行实现
+CTankEnemy::CTankEnemy(const char* szName):CTankPlayer(szName) //对构造函数进行实现//本来是继承自CWeapon，但是要实现多态，所以改了改，让它继承自CTankPlayer
 {
     //ctor
     m_fBulletCreateTime =   0;
+    m_fSpeed            =   8;
 }
 
 CTankEnemy::~CTankEnemy()
@@ -125,4 +126,38 @@ void CTankEnemy::OnSpriteColSprite(CWeapon* pSprite)
 	}
 	SetSpriteLinearVelocity(0.f,0.f);
     m_fChangeDirTime = 1.8;
+}
+
+void CTankEnemy::TrackMove()
+{
+    int Dir = 0;
+    CTankPlayer* m_pTankPlayer = g_GameMain.GetPalyer();
+    if(GetSpritePositionX()<m_pTankPlayer->GetSpritePositionX()-2)
+    {
+        SetSpeedX(m_fSpeed);
+        SetSpeedY(0);
+        Dir = 1;
+        SetDir(Dir);
+    }else if(GetSpritePositionX()>m_pTankPlayer->GetSpritePositionX()+2){
+        SetSpeedX(-1*m_fSpeed);
+        SetSpeedY(0);
+        Dir = 3;
+        SetDir(Dir);
+    }
+    else if(GetSpritePositionY()<m_pTankPlayer->GetSpritePositionY()-2)
+    {
+        SetSpeedX(0);
+        SetSpeedY(m_fSpeed);
+        Dir = 2;
+        SetDir(Dir);
+
+    }
+    else if(GetSpritePositionY()>m_pTankPlayer->GetSpritePositionY()+2){
+        SetSpeedX(0);
+        SetSpeedY(-1*m_fSpeed);
+        Dir = 0;
+        SetDir(Dir);
+    }
+    SetSpriteRotation(float(90*GetDir())); //用方向值乘于90得到精灵旋转度数
+    SetSpriteLinearVelocity(GetSpeedX(),GetSpeedY());
 }

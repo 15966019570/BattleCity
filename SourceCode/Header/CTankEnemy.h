@@ -1,9 +1,9 @@
 #ifndef CTANKENEMY_H
 #define CTANKENEMY_H
 #include <windows.h>
-#include "CWeapon.h"
+#include "CTankPlayer.h"
 
-class CTankEnemy : public CWeapon
+class CTankEnemy : public CTankPlayer
 {
     private:
 
@@ -16,7 +16,7 @@ class CTankEnemy : public CWeapon
 
         void            Init();
 
-        //set·½·¨
+        //set方法
         void            SetChangeDirTime(float Time)    {m_fChangeDirTime = Time;}
         void            SetSpeed(float speed)           {m_fSpeed = speed;}
         //get方法
@@ -29,6 +29,7 @@ class CTankEnemy : public CWeapon
         void            OnFire(float fDeltaTime);
 
         void            OnSpriteColSprite(CWeapon* pSprite);
+        void            TrackMove();
 
     protected:
 

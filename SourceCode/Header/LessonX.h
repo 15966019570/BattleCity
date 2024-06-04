@@ -30,6 +30,7 @@ private:
 //    CTankEnemy*     m_pTankEnemy;               //机器人
     bool            m_bEnemySpeed;
     vector<CWeapon*>m_vWeapon;
+    bool            m_bTracePlayer;
 
 	float           m_fTankEnemyTime;
 	int             m_iTankEnemyNumber;
@@ -82,6 +83,7 @@ public:
 
 	// Get方法
 	int				GetGameState()									{ return m_iGameState; }
+    CTankPlayer*    GetPalyer()                                     { return m_pTankPlayer; }
 
 	// Set方法
 	void			SetGameState( const int iState )				{ m_iGameState	=	iState; }
@@ -113,6 +115,7 @@ public:
     void            PlayerSpeedFast();//按0键我方坦克速度加快，再按0键恢复。
     void            StopEnemy();//按6键敌方坦克全固定，再按6键恢复。
     void            PlayerTP();//按1键我方坦克传送到别处。
+    void            TracePlayer(float fDeltaTime);//按9键敌方坦克都追击我方坦克，再按9键恢复。
 };
 
 /////////////////////////////////////////////////////////////////////////////////
