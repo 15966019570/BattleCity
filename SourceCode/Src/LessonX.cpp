@@ -11,6 +11,7 @@
 #include "CBullet.h"
 #include "CWeapon.h"
 #include <iostream>
+#include <vld.h>
 using namespace std;
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -49,6 +50,8 @@ CGameMain::CGameMain()
 // Îö¹¹º¯Êý
 CGameMain::~CGameMain()
 {
+    _CrtSetBreakAlloc(106);
+
     free(m_pBattleCity);
     free(m_pSpaceStart);
     free(m_pScore);
@@ -134,7 +137,7 @@ void CGameMain::GameInit()
         fread(&m_iHight,sizeof(int),1,fp);
         fclose(fp);
     }
-    m_pHight = new CTextSprite("hight");
+    //m_pHight = new CTextSprite("hight");");
     m_pHight->SetTextValue(m_iHight);
 
 }
@@ -182,8 +185,7 @@ void CGameMain::GameEnd()
 
     m_pBattleCity->SetSpriteVisible(true);
 	m_pSpaceStart->SetSpriteVisible(true);
-	SetGameState(0);
-
+	SetGameState(0);;
 }
 //=============================================================================
 //

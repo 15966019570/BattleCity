@@ -1,7 +1,7 @@
-//-------------------------- 6/7/2024 -- 23:37:54 -----
+//-------------------------- 6/7/2024 -- 23:43:31 -----
 Processor Init:
-   Intel (unknown, Pentium Pro/II/III family), ~2.27 Ghz
-     (timed at roughly 2.28 Ghz)
+   Intel (unknown, Pentium Pro/II/III family), ~2.30 Ghz
+     (timed at roughly 2.30 Ghz)
    FPU detected
    MMX detected
    SSE detected
@@ -119,6 +119,10 @@ Activating DirectInput...
 DirectInput joystick failed to enable!
 Compiling D:/C++ history/FunCode/BattleCity/Bin/game/data/levels/level.t2d...
 Loading compiled script D:/C++ history/FunCode/BattleCity/Bin/game/data/levels/level.t2d.
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
 t2dSceneGraph::addToScene() - Object '1335' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1336' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1337' is already in a SceneGraph!.
@@ -166,14 +170,17 @@ t2dSceneGraph::addToScene() - Object '1378' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1379' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1380' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1381' is already in a SceneGraph!.
+DirectInput deactivated.
 t2dSceneGraph::addToScene() - Object '1382' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1383' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1384' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1385' is already in a SceneGraph!.
+Activating DirectInput...
 t2dSceneGraph::addToScene() - Object '1386' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1387' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1388' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1389' is already in a SceneGraph!.
+DirectInput deactivated.
 t2dSceneGraph::addToScene() - Object '1390' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1391' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1392' is already in a SceneGraph!.
@@ -237,6 +244,7 @@ t2dSceneGraph::addToScene() - Object '1449' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1450' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1451' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1452' is already in a SceneGraph!.
+Activating DirectInput...
 t2dSceneGraph::addToScene() - Object '1453' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1454' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1455' is already in a SceneGraph!.
@@ -305,6 +313,300 @@ t2dSceneGraph::addToScene() - Object '1517' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1518' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1519' is already in a SceneGraph!.
 t2dSceneGraph::addToScene() - Object '1520' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1521' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1522' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1523' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1524' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1525' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1526' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1527' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1528' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1529' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1530' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1531' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1532' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1533' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1534' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1535' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1536' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1537' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1538' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1539' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1540' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1541' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1542' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1543' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1544' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1545' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1546' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1547' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1548' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1549' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1550' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1551' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1552' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1553' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1554' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1555' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1556' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1557' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1558' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1559' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1560' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1561' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1562' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1563' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1564' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1565' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1566' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1567' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1568' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1569' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1570' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1571' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1572' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1573' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1574' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1575' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1576' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1577' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1578' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1579' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1580' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1581' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1582' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1583' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1584' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1585' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1586' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1587' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1588' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1589' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1590' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1591' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1592' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1593' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1594' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1595' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1596' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1597' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1598' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1599' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1600' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1601' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1602' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1603' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1604' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1605' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1606' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1607' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1608' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1609' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1610' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1611' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1612' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1613' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1614' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1615' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1616' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1617' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1618' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1619' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1620' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1621' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1622' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1623' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1624' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1625' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1626' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1627' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1628' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1629' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1630' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1631' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1632' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1633' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1634' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1635' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1636' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1637' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1638' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1639' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1640' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1641' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1642' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1643' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1644' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1645' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1646' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1647' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1648' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1649' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1650' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1651' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1652' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1653' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1654' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1655' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1656' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1657' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1658' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1659' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1660' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1661' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1662' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1663' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1664' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1665' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1666' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1667' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1668' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1669' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1670' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1671' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1672' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1673' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1674' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1675' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1676' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1677' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1678' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1679' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1680' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1681' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1682' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1683' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1684' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1685' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1686' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1687' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1688' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1689' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1690' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1691' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1692' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1693' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1694' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1695' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1696' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1697' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1698' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1699' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1700' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1701' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1702' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1703' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1704' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1705' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1706' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1707' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1708' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1709' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1710' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1711' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1712' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1713' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1714' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1715' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1716' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1717' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1718' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1719' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1720' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1721' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1722' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1723' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1724' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1725' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1726' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1727' is already in a SceneGraph!.
+DirectInput deactivated.
+t2dSceneGraph::addToScene() - Object '1728' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1729' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1730' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1731' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1732' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1733' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1734' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1735' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1736' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1737' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1738' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1739' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1740' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1741' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1742' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1743' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1744' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1745' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1746' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1747' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1748' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1749' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1750' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1751' is already in a SceneGraph!.
+Activating DirectInput...
+t2dSceneGraph::addToScene() - Object '1752' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1753' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1754' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1755' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1756' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1757' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1758' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1759' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1760' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1761' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1762' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1763' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1764' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1765' is already in a SceneGraph!.
+DirectInput deactivated.
+t2dSceneGraph::addToScene() - Object '1766' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1767' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1768' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1769' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1770' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1771' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1772' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1773' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1774' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1775' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1776' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1777' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1778' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1779' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1780' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1781' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1782' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1783' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1784' is already in a SceneGraph!.
+Activating DirectInput...
+t2dSceneGraph::addToScene() - Object '1785' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1786' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1787' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1788' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1789' is already in a SceneGraph!.
+DirectInput deactivated.
+t2dSceneGraph::addToScene() - Object '1790' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1791' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1792' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1793' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1794' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1795' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1796' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1797' is already in a SceneGraph!.
+t2dSceneGraph::addToScene() - Object '1798' is already in a SceneGraph!.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

@@ -30,6 +30,9 @@
     <ClCompile Include="..\..\Src\CTankEnemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Src\CWeapon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Header\LessonX.h">
@@ -47,10 +50,17 @@
     <ClInclude Include="..\..\Header\CTankEnemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Header\CWeapon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Src\CommonClass.a" />
+    <Library Include="..\..\Src\CommonClass_2015.lib" />
   </ItemGroup>
 </Project>

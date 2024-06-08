@@ -6,16 +6,34 @@
       "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\LessonX.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CWeapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CWeapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAD659F-E4A6-4CE5-AD38-FB8BDC3A7110}|VCProject2015\\VCProject2015.vcxproj|D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,20 +43,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp",
-              "RelativeDocumentMoniker": "..\\Src\\Main.cpp",
-              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp",
-              "RelativeToolTip": "..\\Src\\Main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "CBullet.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CBullet.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\CBullet.cpp",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CBullet.cpp",
+              "RelativeToolTip": "..\\Src\\CBullet.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-27T08:06:30.77Z",
+              "WhenOpened": "2024-06-08T05:32:13.931Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CBullet.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CBullet.h",
+              "RelativeDocumentMoniker": "..\\Header\\CBullet.h",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CBullet.h",
+              "RelativeToolTip": "..\\Header\\CBullet.h",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-08T04:37:12.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CTankEnemy.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankEnemy.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\CTankEnemy.cpp",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankEnemy.cpp",
+              "RelativeToolTip": "..\\Src\\CTankEnemy.cpp",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAgwKMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-08T05:31:50.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CTankPlayer.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\CTankPlayer.cpp",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp",
+              "RelativeToolTip": "..\\Src\\CTankPlayer.cpp",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAgwGQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-08T05:31:39.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CWeapon.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CWeapon.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\CWeapon.cpp",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CWeapon.cpp",
+              "RelativeToolTip": "..\\Src\\CWeapon.cpp",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-08T05:31:11.858Z"
             },
             {
               "$type": "Document",
@@ -48,48 +116,74 @@
               "RelativeDocumentMoniker": "..\\Src\\LessonX.cpp",
               "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\LessonX.cpp",
               "RelativeToolTip": "..\\Src\\LessonX.cpp",
-              "ViewState": "AQIAALEAAAAAAAAAAAAnwIIAAAADAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwNwBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-27T08:06:29.949Z",
+              "WhenOpened": "2024-06-08T04:55:28.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LessonX.h",
-              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h",
-              "RelativeDocumentMoniker": "..\\Header\\LessonX.h",
-              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h",
-              "RelativeToolTip": "..\\Header\\LessonX.h",
-              "ViewState": "AQIAACQAAAAAAAAAAAAqwCYAAAAPAAAA",
+              "DocumentIndex": 9,
+              "Title": "CTankEnemy.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankEnemy.h",
+              "RelativeDocumentMoniker": "..\\Header\\CTankEnemy.h",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankEnemy.h",
+              "RelativeToolTip": "..\\Header\\CTankEnemy.h",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-27T04:00:32.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T04:37:13.904Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CTankPlayer.cpp",
-              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp",
-              "RelativeDocumentMoniker": "..\\Src\\CTankPlayer.cpp",
-              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\CTankPlayer.cpp",
-              "RelativeToolTip": "..\\Src\\CTankPlayer.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-27T08:04:41.39Z",
+              "Title": "CWeapon.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CWeapon.h",
+              "RelativeDocumentMoniker": "..\\Header\\CWeapon.h",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CWeapon.h",
+              "RelativeToolTip": "..\\Header\\CWeapon.h",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-07T15:18:34.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp",
+              "RelativeDocumentMoniker": "..\\Src\\Main.cpp",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Src\\Main.cpp",
+              "RelativeToolTip": "..\\Src\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-27T08:06:30.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CTankPlayer.h",
               "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankPlayer.h",
               "RelativeDocumentMoniker": "..\\Header\\CTankPlayer.h",
               "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\CTankPlayer.h",
               "RelativeToolTip": "..\\Header\\CTankPlayer.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwBIAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-27T08:04:12.784Z"
+              "WhenOpened": "2024-05-27T08:04:12.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LessonX.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h",
+              "RelativeDocumentMoniker": "..\\Header\\LessonX.h",
+              "ToolTip": "D:\\C\u002B\u002B history\\FunCode\\BattleCity\\SourceCode\\Header\\LessonX.h",
+              "RelativeToolTip": "..\\Header\\LessonX.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-27T04:00:32.045Z",
+              "EditorCaption": ""
             }
           ]
         }

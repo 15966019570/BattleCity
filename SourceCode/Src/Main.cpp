@@ -3,7 +3,12 @@
 //-----------------------------------------------------------------------------
 #include "CommonClass.h"
 #include "LessonX.h"
-
+#define _CRTDBG_MAP_ALLOC
+#include<stdlib.h>
+#include<crtdbg.h>//以下三行可省略无实际效果，在普通项目中可以
+#ifdef _DEBUG
+#define new new(_NORMAL_BLOCK,__FILE__,__LINE__)
+#endif
 ///////////////////////////////////////////////////////////////////////////////////////////
 //
 // 主函数入口

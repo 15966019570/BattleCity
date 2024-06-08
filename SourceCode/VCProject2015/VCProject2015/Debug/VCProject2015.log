@@ -2,25 +2,23 @@
 cl : 命令行  warning D9035: “Gm”选项已否决，并将在将来的版本中移除
   Main.cpp
   LessonX.cpp
-D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(121,18): warning C4018: “<”: 有符号/无符号不匹配
-D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(230,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(134,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(156,18): warning C4018: “<”: 有符号/无符号不匹配
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(181,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(400,41): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(400,39): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(425,16): warning C4018: “<”: 有符号/无符号不匹配
+  CWeapon.cpp
   CTankPlayer.cpp
   CTankEnemy.cpp
-D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(75,22): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
-D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(92,13): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(126,24): warning C4305: “=”: 从“double”到“float”截断
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(77,22): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(94,13): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\CTankEnemy.cpp(128,24): warning C4305: “=”: 从“double”到“float”截断
   CBullet.cpp
 D:\C++ history\FunCode\BattleCity\SourceCode\Src\CBullet.cpp(37,22): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
   正在生成代码...
-D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(237): warning C4715: “CGameMain::FindWeaponByName”: 不是所有的控件路径都返回值
+D:\C++ history\FunCode\BattleCity\SourceCode\Src\LessonX.cpp(432): warning C4715: “CGameMain::FindWeaponByName”: 不是所有的控件路径都返回值
 CBullet.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/INCREMENTAL:NO”规范)
 LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-CBullet.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall CWeapon::CWeapon(char const *)" (??0CWeapon@@QAE@PBD@Z)，函数 "public: __thiscall CBullet::CBullet(char const *)" (??0CBullet@@QAE@PBD@Z) 中引用了该符号
-CTankEnemy.obj : error LNK2001: 无法解析的外部符号 "public: __thiscall CWeapon::CWeapon(char const *)" (??0CWeapon@@QAE@PBD@Z)
-CTankPlayer.obj : error LNK2001: 无法解析的外部符号 "public: __thiscall CWeapon::CWeapon(char const *)" (??0CWeapon@@QAE@PBD@Z)
-LessonX.obj : error LNK2001: 无法解析的外部符号 "public: __thiscall CWeapon::CWeapon(char const *)" (??0CWeapon@@QAE@PBD@Z)
-CBullet.obj : error LNK2019: 无法解析的外部符号 "public: virtual __thiscall CWeapon::~CWeapon(void)" (??1CWeapon@@UAE@XZ)，函数 "public: virtual __thiscall CBullet::~CBullet(void)" (??1CBullet@@UAE@XZ) 中引用了该符号
-CTankEnemy.obj : error LNK2001: 无法解析的外部符号 "public: virtual __thiscall CWeapon::~CWeapon(void)" (??1CWeapon@@UAE@XZ)
-CTankPlayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual __thiscall CWeapon::~CWeapon(void)" (??1CWeapon@@UAE@XZ)
-LessonX.obj : error LNK2019: 无法解析的外部符号 "public: bool __thiscall CWeapon::IsDead(void)" (?IsDead@CWeapon@@QAE_NXZ)，函数 "public: void __thiscall CGameMain::GameRun(float)" (?GameRun@CGameMain@@QAEXM@Z) 中引用了该符号
-..\..\..\Bin\Game.exe : fatal error LNK1120: 3 个无法解析的外部命令
+CommonClass_2015.lib(CommonClass.obj) : warning LNK4099: 未找到 PDB“”(使用“CommonClass_2015.lib(CommonClass.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  VCProject2015.vcxproj -> D:\C++ history\FunCode\BattleCity\Bin\Game.exe

@@ -103,6 +103,7 @@
     <ClCompile Include="..\..\Src\CBullet.cpp" />
     <ClCompile Include="..\..\Src\CTankEnemy.cpp" />
     <ClCompile Include="..\..\Src\CTankPlayer.cpp" />
+    <ClCompile Include="..\..\Src\CWeapon.cpp" />
     <ClCompile Include="..\..\Src\LessonX.cpp" />
     <ClCompile Include="..\..\Src\Main.cpp" />
   </ItemGroup>
@@ -111,10 +112,15 @@
     <ClInclude Include="..\..\Header\CommonClass.h" />
     <ClInclude Include="..\..\Header\CTankEnemy.h" />
     <ClInclude Include="..\..\Header\CTankPlayer.h" />
+    <ClInclude Include="..\..\Header\CWeapon.h" />
     <ClInclude Include="..\..\Header\LessonX.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="VCTemplate.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Src\CommonClass.a" />
+    <Library Include="..\..\Src\CommonClass_2015.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
